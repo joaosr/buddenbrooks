@@ -1,21 +1,39 @@
 import React from 'react';
-import { Map, Marker, Popup, TileLayer } from 'react-leaflet'
+import { Map, TileLayer } from 'react-leaflet'
+import L from 'leaflet';
+import CountryLayer from '../CountryLayer'
 import './Map.css';
 import 'leaflet/dist/leaflet.css'
 
+import icon from 'leaflet/dist/images/marker-icon.png';
+import iconShadow from 'leaflet/dist/images/marker-shadow.png';
+
+let DefaultIcon = L.icon({
+    iconUrl: icon,
+    shadowUrl: iconShadow
+});
+
+L.Marker.prototype.options.icon = DefaultIcon;
+
 export default class MapContainer extends React.Component {
   render() {
-    const position = [51.505, -0.09];
-
     return (
-      <Map center={position} zoom={13}>
+      <Map
+        bounds={L.geoJSON(this.props.layers).getBounds()}
+        zoomControl={false}
+        boxZoom={false}
+        doubleClickZoom={false}
+        dragging={false}
+        keyboard={false}
+        scrollWheelZoom={false}
+        tap={false}
+        touchZoom={false}
+      >
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
         />
-        <Marker position={position}>
-          <Popup>A pretty CSS3 popup.<br />Easily customizable.</Popup>
-        </Marker>
+        <CountryLayer data={this.props.layers} />
       </Map>
     );
   }
