@@ -5,6 +5,8 @@
 - Run dc.js library in ReactJS App ([Tutorial](https://www.lighttag.io/blog/react-dc-js/))
 - Create storybook html for charts components ([Guide](https://storybook.js.org/docs/guides/guide-html/))
 
+- Using React and jQuery Together ([Blog](http://tech.oyster.com/using-react-and-jquery-together/) | [github](https://github.com/ryanflorence/react-training/blob/gh-pages/lessons/05-wrapping-dom-libs.md))
+
 ## Available Scripts
 
 In the project directory, you can run:
