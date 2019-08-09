@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { GeoJSON } from 'react-leaflet';
 
-export default class CountryLayer extends Component {
+export default class MapLayer extends Component {
 
   getStyleByFeature = (feature) => {
     return {
@@ -12,13 +12,9 @@ export default class CountryLayer extends Component {
     };
   }
 
-  onFeatureClick = (evt, feature, layer) => {
-    console.log(feature.properties.name);
-  }
-
   bindLayerEvents = (feature, layer) => {
     layer.on({
-      click: evt => this.onFeatureClick(evt, feature, layer)
+      click: this.props.onFeatureClick
     });
   }
 

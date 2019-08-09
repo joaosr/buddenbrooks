@@ -1,7 +1,7 @@
 import React from 'react';
 import { Map, TileLayer } from 'react-leaflet'
 import L from 'leaflet';
-import CountryLayer from '../CountryLayer'
+import MapLayer from '../MapLayer'
 import './Map.css';
 import 'leaflet/dist/leaflet.css'
 
@@ -33,7 +33,7 @@ export default class MapContainer extends React.Component {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
         />
-        <CountryLayer data={this.props.layers} />
+        <MapLayer data={this.props.layers} onFeatureClick={this.props.onFeatureClick} />
       </Map>
     );
   }
