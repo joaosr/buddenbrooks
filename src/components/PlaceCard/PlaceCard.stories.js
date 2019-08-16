@@ -4,4 +4,6 @@ import { storiesOf } from '@storybook/react';
 
 import PlaceCard from './index';
 
-storiesOf('PlaceCard', module).add('default', () => <PlaceCard />);
+import morley from './morley.csv'
+
+storiesOf('PlaceCard', module).add('default', () => <div><PlaceCard data={morley} /></div>);

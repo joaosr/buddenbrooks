@@ -1,4 +1,5 @@
-.leaflet-container {
+.chart {
+  background: #DDD;
   height: 400px;
   width: 600px;
 }

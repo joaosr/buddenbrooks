@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 // import App from './App';
 import MapContainer from './components/Map';
+import PlaceCard from './components/PlaceCard';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<MapContainer />, document.getElementById('root'));

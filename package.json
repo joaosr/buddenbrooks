@@ -4,6 +4,10 @@
   "private": true,
   "dependencies": {
     "@storybook/addon-viewport": "^5.1.10",
+    "crossfilter2": "^1.4.7",
+    "d3": "^5.9.7",
+    "dc": "^3.1.1",
+    "glamor": "^2.20.40",
     "leaflet": "^1.5.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -37,6 +41,7 @@
     "@storybook/addon-actions": "^5.1.10",
     "@storybook/addon-links": "^5.1.10",
     "@storybook/addons": "^5.1.10",
-    "@storybook/react": "^5.1.10"
+    "@storybook/react": "^5.1.10",
+    "dsv-loader": "^2.0.0"
   }
 }
