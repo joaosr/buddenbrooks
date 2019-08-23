@@ -4,28 +4,6 @@ import * as dc from "dc";
 // import { rhythm } from "../utils/typography";
 import { css } from "glamor";
 
-const ResetButton = props => {
-  const style = css({
-    padding: "10px",//rhythm(0.1),
-    display: "inline",
-    cursor:'pointer',
-    float:'right',
-    '&:hover':{
-        background: "#ddd",
-    }
-  });
-  return (
-    <span
-      {...style}
-      onClick={() => {
-        props.chart.filterAll();
-        dc.redrawAll();
-      }}
-    >
-      reset
-    </span>
-  );
-};
 export const ChartTemplate = props => {
     /*
     We render the dc chart using an effect. We want to pass the chart as a prop after the dc call,
@@ -60,9 +38,6 @@ export const ChartTemplate = props => {
       ref={div}
       {...chartStyles}
     >
-
-     <ResetButton chart={chart} />
-     <label>{props.title}</label>
     </div>
   );
 };

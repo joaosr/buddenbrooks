@@ -19,14 +19,12 @@ export class DataContext extends React.Component {
     }
     this.setState({loading:true})
 
-    csv(this.props.data)
-      .then((data)=> {
-        data.forEach(function(x) {
-          x.Speed = +x.Speed;
-        });
-       this.ndx = crossfilter(data);
-       this.setState({loading:false,hasNDX:true});
-    })
+
+    this.props.data.forEach(function(x) {
+      x.Speed = +x.Speed;
+    });
+    this.ndx = crossfilter(this.props.data);
+    this.setState({loading:false,hasNDX:true});
   }
 
   render() {
