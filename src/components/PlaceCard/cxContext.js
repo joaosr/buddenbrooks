@@ -1,5 +1,4 @@
 import React from 'react';
-import { csv } from 'd3'
 import * as crossfilter from "crossfilter2";
 
 export const CXContext = React.createContext("CXContext");
@@ -19,20 +18,14 @@ export class DataContext extends React.Component {
     }
     this.setState({loading:true})
 
-    csv(this.props.data)
-      .then((data)=> {
-        data.forEach(function(x) {
-          x.Speed = +x.Speed;
-        });
-       this.ndx = crossfilter(data);
-       this.setState({loading:false,hasNDX:true});
-    })
+    this.ndx = crossfilter(this.props.data);
+    this.setState({loading:false,hasNDX:true});
   }
 
   render() {
     if(!this.state.hasNDX){
-          return null;
-      }
+      return null;
+    }
     return (
       <CXContext.Provider value={{ndx:this.ndx}}>
         <div ref={this.parent}>

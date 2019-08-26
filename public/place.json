@@ -1,0 +1,74 @@
+[
+   {
+      "city_id":"06412000",
+      "city":"Frankfurt am Main",
+      "rent":"9285600.0",
+      "usage_type": "Office"
+   },
+   {
+      "city_id":"06412000",
+      "city":"Frankfurt am Main",
+      "rent":"9285600.0",
+      "usage_type": "Residential"
+   },
+   {
+      "city_id":"06412000",
+      "city":"Frankfurt am Main",
+      "rent":"9285600.0",
+      "usage_type": "Retail"
+   },
+   {
+      "city_id":"11000000",
+      "city":"Berlin",
+      "rent":"5347665.0",
+      "usage_type": "Office"
+   },
+   {
+      "city_id":"11000000",
+      "city":"Berlin",
+      "rent":"5347665.0",
+      "usage_type": "Residential"
+   },
+   {
+      "city_id":"11000000",
+      "city":"Berlin",
+      "rent":"5347665.0",
+      "usage_type": "Retail"
+   },
+   {
+      "city_id":"05111000",
+      "city":"Düsseldorf",
+      "rent":"2587394.28",
+      "usage_type": "Office"
+   },
+   {
+      "city_id":"05111000",
+      "city":"Düsseldorf",
+      "rent":"2587394.28",
+      "usage_type": "Residential"
+   },
+   {
+      "city_id":"05111000",
+      "city":"Düsseldorf",
+      "rent":"2587394.28",
+      "usage_type": "Retail"
+   },
+   {
+      "city_id":"02000000",
+      "city":"Hamburg",
+      "rent":"2175000.0",
+      "usage_type": "Office"
+   },
+   {
+      "city_id":"02000000",
+      "city":"Hamburg",
+      "rent":"2175000.0",
+      "usage_type": "Residential"
+   },
+   {
+      "city_id":"02000000",
+      "city":"Hamburg",
+      "rent":"2175000.0",
+      "usage_type": "Retail"
+   }
+]

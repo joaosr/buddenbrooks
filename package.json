@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@storybook/addon-knobs": "^5.1.11",
     "@storybook/addon-viewport": "^5.1.10",
     "crossfilter2": "^1.4.7",
     "d3": "^5.9.7",
