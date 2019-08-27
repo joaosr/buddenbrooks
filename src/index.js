@@ -5,9 +5,9 @@ import App from './App';
 import MapContainer from './components/Map';
 import PlaceCard from './components/PlaceCard';
 import * as serviceWorker from './serviceWorker';
-import place from './components/PlaceCard/place.json';
+import countries from './countries.json';
 
-ReactDOM.render(<PlaceCard data={place} usageType={''} />, document.getElementById('root'));
+ReactDOM.render(<MapContainer layers={countries} />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
